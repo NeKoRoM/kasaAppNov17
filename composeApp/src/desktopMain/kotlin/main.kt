@@ -9,7 +9,6 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import ekspensetrakker.composeapp.generated.resources.Res
-import ekspensetrakker.composeapp.generated.resources.ipad
 import org.jetbrains.compose.resources.imageResource
 
 
@@ -40,8 +39,7 @@ fun main() {
         ) {
             Box(contentAlignment = Alignment.BottomCenter, modifier = Modifier.fillMaxSize()) {
                 if (squashed) {
-                    Image(imageResource(Res.drawable.ipad), "iPad Pro 2024")
-                } else {
+                    } else {
                     App()
                 }
             }
